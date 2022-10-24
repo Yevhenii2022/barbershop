@@ -1,0 +1,147 @@
+:root {
+  --main-title-color: #ffffff;
+  --secondary-title-color: #303030;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 12px;
+line-height: calc(16/12);
+letter-spacing: 0.1em;
+text-transform: uppercase;
+cursor: pointer;
+background-color: transparent;
+}
+
+/* Header */
+.header {
+  background-color: gray;
+}
+.nav-list {
+}
+.nav-item {
+}
+.nav-link {
+ font-weight: 600;
+Font-size: 12px;
+line-height: 1.33;
+Letter-spacing: 0.1em;
+color: var(--main-title-color);
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #FF6C00;
+}
+
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.1em;
+color: var(--main-title-color);
+}
+
+.header-btn {
+  color: var(--main-title-color);
+border: 1px solid var(--main-title-color);
+}
+
+.header-tel:hover, .header-tel:focus {
+  color: #FF6C00;
+}
+.header-btn:hover, .header-btn:focus {
+  border-color: #FF6C00;
+}
+
+/* Hero */
+.hero {
+  background-color: brown;
+}
+.hero-list {
+}
+
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+line-height: calc(15/11);
+letter-spacing: 0.02em;
+color: var(--secondary-title-color);
+}
+.hero-link:hover,
+.hero-link:focus {
+  color: #FF6C00;
+}
+
+.hero-text {
+font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+text-transform: uppercase;
+color: rgba(157, 164, 189, 0.6);
+}
+.hero-title {
+font-family: Raleway, sans-serif;
+font-weight: 700 ;
+font-size: 72px;
+line-height: calc(85/72);
+Letter-spacing: 0.05em;
+color: var(--main-title-color);
+}
+.hero-description {
+font-size: 18px;
+line-height: 1.66;
+letter-spacing: 0.02em;
+color: #9DA4BD;
+}
+
+/* About */
+.about-title {
+  font-weight: 600;
+  font-size: 11px;
+line-height: calc(15/11);
+color: var(--secondary-title-color);
+}
+
+.about-sub-title {
+  font-family: Raleway, sans-serif;
+font-weight: 700;
+font-size: 42px;
+line-height: calc(49/42);
+letter-spacing: 0.05em;
+color: var(--secondary-title-color);
+}
+
+.about-description {
+  font-size: 18px;
+line-height: calc(30/18);
+letter-spacing: 00.02em;
+color: #555555;
+}
+
+.about-text {
+  font-size: 14px;
+line-height: calc(26/14);
+Letter spacing: 0.02em;
+color: #555555;
+}
+
+.about-btn {
+  color: var(--secondary-title-color);
+border: 1px solid var(--main-title-color);
+}
+
+.about-btn:hover, .about-btn:focus {
+  border-color: #FF6C00;
+}

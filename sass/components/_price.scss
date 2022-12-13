@@ -1,0 +1,111 @@
+.price {
+  @extend %section;
+
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: var(--dark-bg-cl);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  // phone screen
+  background-image: url('../images/price/img_sm@1x.png');
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/price/img_sm@2x.png');
+  }
+
+  // tablet screen
+  @media screen and (min-width: 481px) {
+    background-image: url('../images/price/img_md@1x.png');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/price/img_md@2x.png');
+    }
+  }
+
+  // desktop screen
+  @media screen and (min-width: 769px) {
+    background-image: url('../images/price/img_lg@1x.png');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/price/img_lg@2x.png');
+    }
+  }
+}
+
+.price-block {
+  margin-bottom: 44px;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 20px;
+
+    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.price-list {
+  @media screen and (min-width: 1200px) {
+    flex-basis: 570px;
+    padding: 30px 20px;
+  }
+}
+
+.price-list:first-child {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+}
+
+.price-list:last-child {
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
+}
+
+.price-item {
+  display: flex;
+  align-items: baseline;
+
+  color: var(--grey-cl);
+
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+    line-height: calc(20 / 14);
+  }
+}
+
+.price-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.price-item::before {
+  content: '';
+  display: block;
+  height: 1px;
+  flex-grow: 1;
+  margin-left: 12px;
+  margin-right: 12px;
+
+  background-color: rgba(157, 164, 189, 0.12);
+}
+
+.price-item-service {
+  order: -1;
+}
+
+.price-btn {
+  display: block;
+  margin: 0 auto;
+}
